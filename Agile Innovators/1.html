@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        
+    }
+
+    .container {
+        background-color: #3A3C6C;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+        color: white;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        color: white;
+        font-size: 14px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .form-group input[type="date"],
+    .form-group input[type="time"] {
+        width: 48%;
+    }
+
+    .form-group.inline {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #EBB14D;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .submit-btn:hover {
+        background-color: #EBB14D;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Make your trip</h2>
+    <div class="form-group">
+        <label for="pickup-location">PICK-UP LOCATION</label>
+        <input type="text" id="pickup-location" placeholder="City,Station, etc">
+    </div>
+    <div class="form-group">
+        <label for="dropoff-location">DROP-OFF LOCATION</label>
+        <input type="text" id="dropoff-location" placeholder="City, AirportI Station, etc">
+    </div>
+    <div class="form-group inline">
+        <div>
+            <label for="pickup-date">PICK-UP DATE</label>
+            <input type="date" id="pickup-date">
+        </div>
+        <div>
+            <label for="dropoff-date">DROP-OFF DATE</label>
+            <input type="date" id="dropoff-date">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="pickup-time">PICK-UP TIME</label>
+        <input type="time" id="pickup-time">
+    </div>
+    <button class="submit-btn">Share a Car Now</button>
+</div>
+
+</body>
+</html>
